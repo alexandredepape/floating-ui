@@ -42,7 +42,8 @@
   "scripts": {
     "test": "vitest",
     "build": "NODE_ENV=build rollup -c",
-    "dev": "vite"
+    "dev": "vite",
+    "prepare": "npm run build"
   },
   "author": "atomiks",
   "license": "MIT",
