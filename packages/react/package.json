@@ -44,7 +44,7 @@
     "build": "NODE_ENV=build rollup -c",
     "dev": "vite",
     "build:typescript": "tsc",
-    "prepare": "npm run build && tsc"
+    "prepare": "npm run build && tsc && echo 'Built!'"
   },
   "author": "atomiks",
   "license": "MIT",
