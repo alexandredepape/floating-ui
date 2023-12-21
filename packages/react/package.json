@@ -43,7 +43,7 @@
     "test": "vitest",
     "build": "NODE_ENV=build rollup -c",
     "dev": "vite",
-    "prepare": "npm run build"
+    "prepare": "npm install && npm run build"
   },
   "author": "atomiks",
   "license": "MIT",
