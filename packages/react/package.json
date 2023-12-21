@@ -43,7 +43,8 @@
     "test": "vitest",
     "build": "NODE_ENV=build rollup -c",
     "dev": "vite",
-    "prepare": "npm install && npm run build"
+    "build:typescript": "tsc",
+    "prepare": "yarn run build && yarn run build:typescript"
   },
   "author": "atomiks",
   "license": "MIT",
@@ -74,6 +75,9 @@
     "tabbable": "^6.0.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "babel-plugin-annotate-pure-calls": "^0.4.0",
     "@babel/preset-react": "^7.16.0",
     "@radix-ui/react-checkbox": "^1.0.2",
     "@radix-ui/react-icons": "^1.2.0",
@@ -83,6 +87,12 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.2.14",
     "@vitejs/plugin-react": "^4.2.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.3",
+    "rollup": "^3.26.0",
     "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
